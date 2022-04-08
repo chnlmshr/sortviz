@@ -39,6 +39,7 @@ for (let i = 1; i < 361; i++) {
   div.style.width = "1.5px";
   div.style.height = "200px";
   div.style.backgroundColor = `hsl(${i}, 100%, 50%)`;
+  div.style.transform = `rotate(${i}deg)`;
   divs.push(div);
 }
 
