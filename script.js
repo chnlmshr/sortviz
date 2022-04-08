@@ -88,10 +88,34 @@ function insertionSort(arr) {
   }
 }
 
+function selectionSort(arr) {
+  var i, j, min_idx;
+  n = arr.length;
+  for (i = 0; i < n - 1; i++) {
+    min_idx = i;
+    setTimeout(
+      (k, mi) => {
+        for (j = k + 1; j < n; j++) if (arr[j] < arr[mi]) mi = j;
+        let t = arr[mi];
+        arr[mi] = arr[k];
+        arr[k] = t;
+        draw(arr, divs);
+      },
+      i * 50,
+      i,
+      min_idx
+    );
+  }
+}
+
 function triggerbubble() {
   bblSort(colors);
 }
 
 function triggerinsertion() {
   insertionSort(colors);
+}
+
+function triggerSelection() {
+  selectionSort(colors);
 }
