@@ -3,3 +3,30 @@
   justify-content: center;
   align-items: center;
 }
+
+body {
+  background-color: black;
+}
+
+h2 {
+  color: aliceblue;
+  text-align: center;
+  padding: 50px;
+}
+
+.buttons {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  background-color: cornsilk;
+  border-radius: 5px;
+  margin: 5px;
+}
